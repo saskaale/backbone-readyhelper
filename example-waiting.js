@@ -20,9 +20,6 @@ define([
 	}).done(this.parseConfig);
 	FileLoader.load({url: 'data/'+accesslvl+"/"+options.key+".svg", ok: this.onRawSVGLoad, err: this.confLoadError, dataType: 'text', sendAuth: true});
 	
-	//zacnu se zpracovavanim data, az kdyz budu it nacteny vsechny udalosti
-	this.ready(this.initSVG);
-	
     },
     /*
     * An callback to parse this events
